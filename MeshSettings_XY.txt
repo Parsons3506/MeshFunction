@@ -1,0 +1,8 @@
+[Function]
+format=Sin(x) + Sin(y)
+[Domain]
+xMin=-10
+xMax=10
+yMin=-10
+yMax=10
+Resolution=200
