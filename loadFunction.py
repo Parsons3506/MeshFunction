@@ -12,6 +12,7 @@ def createmeshvertices(function, fdomain, resolution):
             z = solveequation(function, x, y)
             v.append( (x,y,z) )
     return v
+    
 
 
 def createmeshfaces(resolution):
@@ -35,7 +36,16 @@ def solveequation( function, x, y ):
     except:
         z = 0
     return z
-
+    
+def SaveFunctionData(strFunction, fDomain, Resolution):
+    file = open("MeshSettings_XY.txt", "w")
+    file.write(strFunction)
+    file.write("\n")
+    for d in fDomain:
+        file.write(str(d))
+        file.write("\n")
+    file.write(str(Resolution))
+    file.close()
 def loadfunctiondata():
     try:
         file = open("MeshSettings_XY.txt", "r")
