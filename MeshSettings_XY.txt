@@ -1,8 +1,6 @@
-[Function]
-format=Sin(x) + Sin(y)
-[Domain]
-xMin=-10
-xMax=10
-yMin=-10
-yMax=10
-Resolution=200
+Specify a function f(x,y[,D,A])
+-10.0
+10.0
+-10.0
+10.0
+50

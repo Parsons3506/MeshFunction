@@ -46,6 +46,8 @@ def SaveFunctionData(strFunction, fDomain, Resolution):
         file.write("\n")
     file.write(str(Resolution))
     file.close()
+    
+
 def loadfunctiondata():
     try:
         file = open("MeshSettings_XY.txt", "r")
